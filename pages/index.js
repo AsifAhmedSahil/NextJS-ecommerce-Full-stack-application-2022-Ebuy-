@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from "../Components/Navbar"
-import Footer from "../Components/Footer"
+// import Navbar from "../Components/Navbar"
+// import Footer from "../Components/Footer"
 import Header from '../Components/Header'
+import Feature from '../Components/Feature'
 
 
 export default function Home() {
@@ -15,14 +16,15 @@ export default function Home() {
       </Head>
 
       <div className='max-w-[1440px] mx-auto'>
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* <div>
         <img src="/home.jpg" className='w-full' alt="" />
       </div> */}
 
       <Header/>
+      <Feature/>
 
-      <Footer/>
+      {/* <Footer/> */}
       </div>
 
       

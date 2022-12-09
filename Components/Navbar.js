@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-300">
+    <div className="bg-gray-300 shadow-md">
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
         <Link href="/">
@@ -23,7 +24,7 @@ const Navbar = () => {
         </Link>
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
-            <Link href="/">
+            <Link href="/Tshirt">
             <a
               
               aria-label="Our product"
@@ -35,7 +36,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-           <Link href="/">
+           <Link href={"/Hoodies"}>
            <a
               
               aria-label="Our product"
@@ -47,7 +48,7 @@ const Navbar = () => {
            </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/Stickers">
             <a
               
               aria-label="Product pricing"
@@ -59,7 +60,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/About">
             <a
               
               aria-label="About us"
@@ -72,15 +73,15 @@ const Navbar = () => {
           </li>
         </ul>
         <ul className="flex items-center hidden space-x-8 lg:flex">
-          <li>
+          <li className='flex justify-center items-center'>
             <Link href="/">
             <a
               
-              className="inline-flex mx-5 items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+              className="flex mx-5 "
               aria-label="cart"
               title="cart"
             >
-              Cart
+              <AiOutlineShoppingCart className='text-blue-500 md:text-3xl text-xl '/>
             </a>
             </Link>
 
