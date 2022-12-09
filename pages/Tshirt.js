@@ -19,6 +19,7 @@ const Tshirt = () => {
               Resist Tshirt
             </h5>
             <p className="text-gray-700 text-base mb-4">Size: sm, L, XL, XXL</p>
+             <p className="text-gray-700 text-base mb-4">Price: ৳ 499/=</p>
             <Link href={"/Products/tshirts"}>
             <button
               type="button"
@@ -44,6 +45,7 @@ const Tshirt = () => {
               Resist Tshirt
             </h5>
             <p className="text-gray-700 text-base mb-4">Size: sm, L, XL, XXL</p>
+             <p className="text-gray-700 text-base mb-4">Price: ৳ 499/=</p>
             <Link href={"/Products/tshirts"}>
             <button
               type="button"
@@ -69,6 +71,7 @@ const Tshirt = () => {
               Resist Tshirt
             </h5>
             <p className="text-gray-700 text-base mb-4">Size: sm, L, XL, XXL</p>
+             <p className="text-gray-700 text-base mb-4">Price: ৳ 499/=</p>
             <Link href={"/Products/tshirts"}>
             <button
               type="button"
@@ -94,6 +97,7 @@ const Tshirt = () => {
               Resist Tshirt
             </h5>
             <p className="text-gray-700 text-base mb-4">Size: sm, L, XL, XXL</p>
+             <p className="text-gray-700 text-base mb-4">Price: ৳ 499/=</p>
             <Link href={"/Products/tshirts"}>
             <button
               type="button"
@@ -119,6 +123,7 @@ const Tshirt = () => {
               Resist Tshirt
             </h5>
             <p className="text-gray-700 text-base mb-4">Size: sm, L, XL, XXL</p>
+             <p className="text-gray-700 text-base mb-4">Price: ৳ 499/=</p>
             <Link href={"/Products/tshirts"}>
             <button
               type="button"
@@ -144,6 +149,7 @@ const Tshirt = () => {
               Resist Tshirt
             </h5>
             <p className="text-gray-700 text-base mb-4">Size: sm, L, XL, XXL</p>
+             <p className="text-gray-700 text-base mb-4">Price: ৳ 499/=</p>
             <Link href={"/Products/tshirts"}>
             <button
               type="button"
@@ -169,6 +175,7 @@ const Tshirt = () => {
               Resist Tshirt
             </h5>
             <p className="text-gray-700 text-base mb-4">Size: sm, L, XL, XXL</p>
+             <p className="text-gray-700 text-base mb-4">Price: ৳ 499/=</p>
             <Link href={"/Products/tshirts"}>
             <button
               type="button"
@@ -194,6 +201,7 @@ const Tshirt = () => {
               Resist Tshirt
             </h5>
             <p className="text-gray-700 text-base mb-4">Size: sm, L, XL, XXL</p>
+             <p className="text-gray-700 text-base mb-4">Price: ৳ 499/=</p>
             <Link href={"/Products/tshirts"}>
             <button
               type="button"
