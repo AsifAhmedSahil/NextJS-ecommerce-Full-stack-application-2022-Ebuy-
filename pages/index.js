@@ -17,7 +17,7 @@ export default function Home() {
 
       <div className='max-w-[1440px] mx-auto'>
       {/* <Navbar/> */}
-      {/* <div>
+      {/* <div> 
         <img src="/home.jpg" className='w-full' alt="" />
       </div> */}
 

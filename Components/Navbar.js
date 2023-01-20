@@ -1,9 +1,24 @@
+import Image from 'next/image';
 import Link from 'next/link'
-import React, { useState } from 'react'
-import { AiOutlineShoppingCart } from 'react-icons/ai';
+import React, { useRef, useState } from 'react'
+import { AiFillCloseCircle, AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleCart = () =>{
+    if(ref.current.classList.contains("translate-x-[700px]")){
+      ref.current.classList.remove("translate-x-[700px]")
+      ref.current.classList.add("translate-x-0")
+    }
+    else if(!ref.current.classList.contains("translate-x-[700px]")){
+      ref.current.classList.remove("translate-x-0")
+      ref.current.classList.add("translate-x-[700px]")
+    }
+
+  }
+
+  const ref = useRef()
 
   return (
     <div className="bg-gray-300 shadow-md">
@@ -17,7 +32,11 @@ const Navbar = () => {
           className="inline-flex items-center"
         >
           
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+          
+          {/* <div className='logo '>
+          <Image src="/Ebuy.png" width={200} height={150} alt=""/>
+          </div> */}
+          <span className='text-2xl font-bold  '>
             Ebuy
           </span>
         </a>
@@ -74,16 +93,7 @@ const Navbar = () => {
         </ul>
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li className='flex justify-center items-center'>
-            <Link href="/">
-            <a
-              
-              className="flex mx-5 "
-              aria-label="cart"
-              title="cart"
-            >
-              <AiOutlineShoppingCart className='text-blue-500 md:text-3xl text-xl '/>
-            </a>
-            </Link>
+            
 
             <Link href="/">
             <a
@@ -95,8 +105,31 @@ const Navbar = () => {
               Sign up
             </a>
             </Link>
+
+            <Link href="/cart">
+            <a
+              onClick={toggleCart}
+              className="flex mx-5 "
+              aria-label="cart"
+              title="cart"
+            >
+              <AiOutlineShoppingCart  className='text-blue-500 md:text-3xl text-xl '/>
+            </a>
+            </Link>
           </li>
         </ul>
+
+        {/* <div ref={ref} className="w-72 absolute sidebar right-0 top-0 bg-green-200 py-10 px-8 z-10 transform transition-transform translate-x-[700px] ">
+          <h2 className='text-xl text-center font-bold'>Shopping cart</h2>
+          <ol className='list-decimal'>
+            <li>
+              <span className='w-2/3'>Tshirts</span>
+              <span className='w-1/3'>1</span>
+            </li>
+          </ol>
+          <p onClick={toggleCart} className="absolute right-2 top-5 text-2xl cursor-pointer "><AiFillCloseCircle/></p>
+
+        </div> */}
         <div className="lg:hidden">
           <button
             aria-label="Open Menu"
